@@ -241,9 +241,9 @@ class TestDataFrameGeneration(unittest.TestCase):
         for col in usage_cols:
             values = df[col]
             self.assertTrue(all(val >= 0.0 for val in values),
-                           f"Found negative values in {col}")
+                            f"Found negative values in {col}")
             self.assertTrue(all(val <= 100.0 for val in values),
-                           f"Found values > 100 in {col}")
+                            f"Found values > 100 in {col}")
 
 
 if __name__ == '__main__':
